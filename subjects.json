@@ -1,0 +1,831 @@
+{
+  "CSE": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3256", "name": "Physics for Information Science", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "CS3251", "name": "Programming in C", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "CS3271", "name": "C Programming Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+     "3": [
+      { "code": "MA3354", "name": "Discrete Mathematics", "credit": 4 },
+      { "code": "CS3351", "name": "Digital Principles & Computer Organization", "credit": 4 },
+      { "code": "CS3352", "name": "Foundations of Data Science", "credit": 3 },
+      { "code": "CS3353", "name": "Data Structures", "credit": 3 },
+      { "code": "CS3354", "name": "Object Oriented Programming", "credit": 3 },
+      { "code": "CS3363", "name": "Data Structures Lab", "credit": 2 },
+      { "code": "CS3364", "name": "Object Oriented Programming Lab", "credit": 1.5 },
+      { "code": "CS3365", "name": "Data Science Lab", "credit": 2 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+    "4": [
+      { "code": "CS3452", "name": "Theory of Computation", "credit": 3 },
+     { "code": "CS3491", "name": "Artificial Intelligence & Machine Learning", "credit": 4 },
+     { "code": "CS3492", "name": "Database Management Systems", "credit": 3 },
+     { "code": "CS3401", "name": "Web Essentials", "credit": 4 },
+     { "code": "CS3451", "name": "Operating Systems", "credit": 3 },
+     { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+     { "code": "CS3461", "name": "OS Lab", "credit": 1.5 },
+     { "code": "CS3481", "name": "DBMS Lab", "credit": 1.5 }
+  ],
+
+    "5": [
+     { "code": "CS3591", "name": "Computer Networks", "credit": 4 },
+     { "code": "CS3562", "name": "Compiler Design", "credit": 4 },
+     { "code": "CS3563", "name": "Cryptography & Cyber Security", "credit": 3 },
+     { "code": "CS3564", "name": "Distributed Computing", "credit": 3 },
+     { "code": "CS3571", "name": "Professional Elective I", "credit": 3 },
+     { "code": "CS3572", "name": "Professional Elective II", "credit": 3 }
+  ],
+
+    "6": [
+     { "code": "CS3651", "name": "Object Oriented Software Engineering", "credit": 4 },
+     { "code": "CS3652", "name": "Embedded Systems & IoT", "credit": 4 },
+     { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+     { "code": "CS3601", "name": "Professional Elective III", "credit": 3 },
+     { "code": "CS3602", "name": "Professional Elective IV", "credit": 3 },
+     { "code": "CS3603", "name": "Professional Elective V", "credit": 3 },
+     { "code": "CS3604", "name": "Professional Elective VI", "credit": 3 }
+  ],
+
+    "7": [
+     { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+     { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+     { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+     { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+     { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+     { "code": "CS3701", "name": "Summer Internship", "credit": 2 }
+  ],
+
+    "8": [
+     { "code": "CS3801", "name": "Project Work / Internship", "credit": 10 }
+  ]
+
+  },
+  "AIML": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3256", "name": "Physics for Information Science", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "AI3251", "name": "Programming in Python", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "AI3271", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3354", "name": "Discrete Mathematics", "credit": 4 },
+      { "code": "CS3351", "name": "Digital Principles & Computer Organization", "credit": 4 },
+      { "code": "AI3351", "name": "Foundations of Data Science", "credit": 3 },
+      { "code": "AI3352", "name": "Data Structures & Algorithms", "credit": 3 },
+      { "code": "CS3354", "name": "Object Oriented Programming", "credit": 3 },
+      { "code": "AI3361", "name": "Data Structures & Algorithms Lab", "credit": 2 },
+      { "code": "AI3362", "name": "Object Oriented Programming Lab", "credit": 1.5 },
+      { "code": "AI3363", "name": "Data Science Lab", "credit": 2 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "CS3452", "name": "Theory of Computation", "credit": 3 },
+      { "code": "CS3451", "name": "Operating Systems", "credit": 4 },
+      { "code": "CS3453", "name": "Database Management Systems", "credit": 3 },
+      { "code": "AI3451", "name": "Machine Learning", "credit": 3 },
+      { "code": "AI3452", "name": "Artificial Intelligence", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "AI3461", "name": "Artificial Intelligence & Machine Learning Lab", "credit": 2 },
+      { "code": "AI3462", "name": "Database Management Systems Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "AI3551", "name": "Natural Language Processing", "credit": 4 },
+      { "code": "AI3552", "name": "Deep Learning for Vision", "credit": 4 },
+      { "code": "CS3551", "name": "Cryptography & Cyber Security", "credit": 3 },
+      { "code": "CS3552", "name": "Distributed Computing", "credit": 3 },
+      { "code": "AI3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "AI3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "CS3651", "name": "Object Oriented Software Engineering", "credit": 4 },
+      { "code": "CS3652", "name": "Embedded Systems & IoT", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "AI3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "AI3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "AI3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "AI3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "AI3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "AI3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "IT": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3256", "name": "Physics for Information Science", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "CS3251", "name": "Programming in C", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "CS3271", "name": "C Programming Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3354", "name": "Discrete Mathematics", "credit": 4 },
+      { "code": "CS3351", "name": "Digital Principles & Computer Organization", "credit": 4 },
+      { "code": "IT3351", "name": "Foundations of Data Science", "credit": 3 },
+      { "code": "IT3352", "name": "Data Structures & Algorithms", "credit": 3 },
+      { "code": "CS3354", "name": "Object Oriented Programming", "credit": 3 },
+      { "code": "IT3361", "name": "Data Structures & Algorithms Lab", "credit": 2 },
+      { "code": "IT3362", "name": "Object Oriented Programming Lab", "credit": 1.5 },
+      { "code": "IT3363", "name": "Data Science Lab", "credit": 2 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "CS3452", "name": "Theory of Computation", "credit": 3 },
+      { "code": "CS3454", "name": "Artificial Intelligence & Machine Learning", "credit": 4 },
+      { "code": "CS3453", "name": "Database Management Systems", "credit": 3 },
+      { "code": "IT3451", "name": "Web Essentials", "credit": 4 },
+      { "code": "CS3451", "name": "Operating Systems", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "CS3461", "name": "OS Lab", "credit": 1.5 },
+      { "code": "CS3462", "name": "DBMS Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "CS3551", "name": "Computer Networks", "credit": 4 },
+      { "code": "IT3551", "name": "Full Stack Web Development", "credit": 3 },
+      { "code": "CS3552", "name": "Distributed Computing", "credit": 3 },
+      { "code": "CS3553", "name": "Embedded Systems & IoT", "credit": 4 },
+      { "code": "IT3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "IT3502", "name": "Professional Elective II", "credit": 3 },
+      { "code": "IT3561", "name": "Full Stack Lab", "credit": 2 }
+    ],
+
+    "6": [
+      { "code": "CS3651", "name": "Object Oriented Software Engineering", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "IT3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "IT3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "IT3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "IT3604", "name": "Professional Elective VI", "credit": 3 },
+      { "code": "IT3661", "name": "Mobile App Development Lab", "credit": 1.5 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "IT3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "IT3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "ECE": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3254", "name": "Physics for Electronics", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "EC3251", "name": "Electronic Devices", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "EC3271", "name": "Electronics Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3355", "name": "Transforms & Partial Differential Equations", "credit": 4 },
+      { "code": "EC3351", "name": "Digital Logic Circuits", "credit": 4 },
+      { "code": "EC3352", "name": "Electronic Devices & Circuits", "credit": 3 },
+      { "code": "EC3353", "name": "Signals & Systems", "credit": 4 },
+      { "code": "EC3354", "name": "Control Systems", "credit": 3 },
+      { "code": "EC3361", "name": "Electronic Devices & Circuits Lab", "credit": 1.5 },
+      { "code": "EC3362", "name": "Signals & Systems Lab", "credit": 1.5 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "MA3452", "name": "Probability & Random Processes", "credit": 4 },
+      { "code": "EC3451", "name": "Analog & Digital ICs", "credit": 3 },
+      { "code": "EC3452", "name": "Electromagnetic Fields", "credit": 3 },
+      { "code": "EC3453", "name": "Microprocessors & Microcontrollers", "credit": 3 },
+      { "code": "EC3454", "name": "Digital Signal Processing", "credit": 4 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "EC3461", "name": "IC Lab", "credit": 1.5 },
+      { "code": "EC3462", "name": "Microprocessor Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "EC3551", "name": "Wireless Communication", "credit": 4 },
+      { "code": "EC3552", "name": "VLSI Design", "credit": 4 },
+      { "code": "EC3553", "name": "Embedded Systems", "credit": 3 },
+      { "code": "CS3551", "name": "Computer Networks", "credit": 3 },
+      { "code": "EC3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "EC3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "EC3651", "name": "Optical Communication", "credit": 4 },
+      { "code": "EC3652", "name": "Microwave Engineering", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "EC3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "EC3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "EC3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "EC3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "EC3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "EC3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "EEE": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3255", "name": "Physics for Electrical Engineering", "credit": 3 },
+      { "code": "BE3252", "name": "Basic Civil & Mechanical Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "EE3251", "name": "Electric Circuits", "credit": 4 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "EE3271", "name": "Circuits Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3353", "name": "Probability & Complex Functions", "credit": 4 },
+      { "code": "EE3351", "name": "Electromagnetic Fields", "credit": 4 },
+      { "code": "EE3352", "name": "Digital Logic Circuits", "credit": 3 },
+      { "code": "EE3353", "name": "Electronic Devices & Circuits", "credit": 3 },
+      { "code": "EE3354", "name": "Electrical Machines I", "credit": 3 },
+      { "code": "CS3352", "name": "C Programming & Data Structures", "credit": 3 },
+      { "code": "EE3361", "name": "Electronic Devices & Circuits Lab", "credit": 1.5 },
+      { "code": "EE3362", "name": "Electrical Machines Lab I", "credit": 1.5 },
+      { "code": "CS3361", "name": "C Programming & Data Structures Lab", "credit": 1.5 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "EE3451", "name": "Transmission & Distribution", "credit": 3 },
+      { "code": "EE3452", "name": "Linear Integrated Circuits", "credit": 3 },
+      { "code": "EE3453", "name": "Measurements & Instrumentation", "credit": 3 },
+      { "code": "EC3453", "name": "Microprocessors & Microcontrollers", "credit": 3 },
+      { "code": "EE3454", "name": "Electrical Machines II", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "EE3461", "name": "Electrical Machines Lab II", "credit": 1.5 },
+      { "code": "EE3462", "name": "LIC Lab", "credit": 1.5 },
+      { "code": "EE3463", "name": "Microprocessor Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "EE3551", "name": "Power System Analysis", "credit": 3 },
+      { "code": "EE3552", "name": "Power Electronics", "credit": 3 },
+      { "code": "EE3553", "name": "Control Systems", "credit": 3 },
+      { "code": "EE3554", "name": "Electrical Drives", "credit": 3 },
+      { "code": "EE3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "EE3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "EE3651", "name": "Renewable Energy Systems", "credit": 4 },
+      { "code": "EE3652", "name": "High Voltage Engineering", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "EE3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "EE3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "EE3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "EE3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "EE3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "EE3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "MECH": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3253", "name": "Physics for Mechanical Engineering", "credit": 3 },
+      { "code": "BE3254", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "ME3251", "name": "Engineering Mechanics", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "ME3271", "name": "Manufacturing Practices Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3351", "name": "Transforms & Partial Differential Equations", "credit": 4 },
+      { "code": "ME3351", "name": "Engineering Thermodynamics", "credit": 4 },
+      { "code": "ME3352", "name": "Strength of Materials", "credit": 3 },
+      { "code": "ME3353", "name": "Manufacturing Processes", "credit": 3 },
+      { "code": "ME3354", "name": "Fluid Mechanics", "credit": 4 },
+      { "code": "ME3361", "name": "Manufacturing Processes Lab", "credit": 2 },
+      { "code": "ME3362", "name": "Strength of Materials Lab", "credit": 1.5 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "ME3451", "name": "Kinematics of Machinery", "credit": 4 },
+      { "code": "ME3452", "name": "Thermal Engineering I", "credit": 3 },
+      { "code": "ME3453", "name": "Metrology & Measurements", "credit": 3 },
+      { "code": "ME3454", "name": "Design of Machine Elements", "credit": 4 },
+      { "code": "ME3455", "name": "Applied Hydraulics & Pneumatics", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "ME3461", "name": "Kinematics Lab", "credit": 1.5 },
+      { "code": "ME3462", "name": "Thermal Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "ME3551", "name": "Dynamics of Machinery", "credit": 4 },
+      { "code": "ME3552", "name": "Thermal Engineering II", "credit": 4 },
+      { "code": "ME3553", "name": "CAD/CAM", "credit": 3 },
+      { "code": "ME3554", "name": "Mechatronics", "credit": 3 },
+      { "code": "ME3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "ME3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "ME3651", "name": "Heat and Mass Transfer", "credit": 4 },
+      { "code": "ME3652", "name": "Finite Element Analysis", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "ME3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "ME3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "ME3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "ME3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "ME3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "ME3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "AGRI": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3257", "name": "Physics for Agricultural Engineering", "credit": 3 },
+      { "code": "BE3253", "name": "Basic Civil & Mechanical Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "AG3251", "name": "Introduction to Agriculture", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "AG3271", "name": "Agricultural Practices Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3352", "name": "Applied Mathematics for Agriculture", "credit": 4 },
+      { "code": "AG3351", "name": "Soil Science & Engineering", "credit": 4 },
+      { "code": "AG3352", "name": "Crop Production Technology", "credit": 3 },
+      { "code": "AG3353", "name": "Farm Machinery", "credit": 3 },
+      { "code": "AG3354", "name": "Irrigation Engineering", "credit": 4 },
+      { "code": "AG3361", "name": "Soil & Water Lab", "credit": 2 },
+      { "code": "AG3362", "name": "Farm Machinery Lab", "credit": 1.5 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "AG3451", "name": "Agricultural Hydrology", "credit": 4 },
+      { "code": "AG3452", "name": "Post Harvest Technology", "credit": 3 },
+      { "code": "AG3453", "name": "Greenhouse Engineering", "credit": 3 },
+      { "code": "AG3454", "name": "Drainage Engineering", "credit": 3 },
+      { "code": "AG3455", "name": "Renewable Energy in Agriculture", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "AG3461", "name": "Irrigation Lab", "credit": 1.5 },
+      { "code": "AG3462", "name": "Post Harvest Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "AG3551", "name": "Farm Power & Machinery", "credit": 4 },
+      { "code": "AG3552", "name": "Precision Farming", "credit": 4 },
+      { "code": "AG3553", "name": "Watershed Management", "credit": 3 },
+      { "code": "AG3554", "name": "Food Processing Engineering", "credit": 3 },
+      { "code": "AG3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "AG3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "AG3651", "name": "Soil Conservation Engineering", "credit": 4 },
+      { "code": "AG3652", "name": "Agricultural Structures", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "AG3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "AG3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "AG3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "AG3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "AG3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "AG3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "BME": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3258", "name": "Physics for Biomedical Engineering", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "BM3251", "name": "Human Anatomy & Physiology", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "BM3271", "name": "Biomedical Lab I", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3356", "name": "Applied Mathematics for Biomedical Engineers", "credit": 4 },
+      { "code": "BM3351", "name": "Medical Instrumentation I", "credit": 4 },
+      { "code": "BM3352", "name": "Biomaterials", "credit": 3 },
+      { "code": "BM3353", "name": "Bio Signals & Systems", "credit": 3 },
+      { "code": "BM3354", "name": "Digital Signal Processing for Biomedical", "credit": 4 },
+      { "code": "BM3361", "name": "Medical Instrumentation Lab", "credit": 2 },
+      { "code": "BM3362", "name": "Bio Signals Lab", "credit": 1.5 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "BM3451", "name": "Medical Instrumentation II", "credit": 4 },
+      { "code": "BM3452", "name": "Biomedical Sensors & Transducers", "credit": 3 },
+      { "code": "BM3453", "name": "Medical Imaging Systems", "credit": 3 },
+      { "code": "BM3454", "name": "Rehabilitation Engineering", "credit": 3 },
+      { "code": "BM3455", "name": "Clinical Engineering", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "BM3461", "name": "Imaging Systems Lab", "credit": 1.5 },
+      { "code": "BM3462", "name": "Sensors Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "BM3551", "name": "Biomedical Signal Processing", "credit": 4 },
+      { "code": "BM3552", "name": "Biomechanics", "credit": 4 },
+      { "code": "BM3553", "name": "Medical Informatics", "credit": 3 },
+      { "code": "BM3554", "name": "Telemedicine Systems", "credit": 3 },
+      { "code": "BM3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "BM3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "BM3651", "name": "Hospital Management Systems", "credit": 4 },
+      { "code": "BM3652", "name": "Biomedical Equipment Maintenance", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "BM3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "BM3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "BM3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "BM3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "BM3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "BM3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "AD": {
+    "1": [
+      { "code": "HS3152", "name": "Professional English I", "credit": 3 },
+      { "code": "MA3151", "name": "Matrices and Calculus", "credit": 4 },
+      { "code": "PH3151", "name": "Engineering Physics", "credit": 3 },
+      { "code": "CY3151", "name": "Engineering Chemistry", "credit": 3 },
+      { "code": "GE3151", "name": "Problem Solving & Python Programming", "credit": 3 },
+      { "code": "GE3152", "name": "Heritage of Tamils", "credit": 1 },
+      { "code": "GE3171", "name": "Python Programming Lab", "credit": 2 },
+      { "code": "BS3171", "name": "Physics & Chemistry Lab", "credit": 2 },
+      { "code": "GE3172", "name": "English Laboratory", "credit": 1 }
+    ],
+
+    "2": [
+      { "code": "HS3252", "name": "Professional English II", "credit": 2 },
+      { "code": "MA3251", "name": "Statistics & Numerical Methods", "credit": 4 },
+      { "code": "PH3256", "name": "Physics for Information Science", "credit": 3 },
+      { "code": "BE3251", "name": "Basic Electrical & Electronics Engineering", "credit": 3 },
+      { "code": "GE3251", "name": "Engineering Graphics", "credit": 4 },
+      { "code": "AD3251", "name": "Data Structures Design", "credit": 3 },
+      { "code": "GE3252", "name": "Tamils and Technology", "credit": 1 },
+      { "code": "GE3271", "name": "Engineering Practices Lab", "credit": 2 },
+      { "code": "AD3271", "name": "Data Structures Lab", "credit": 2 },
+      { "code": "GE3272", "name": "Communication Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MA3354", "name": "Discrete Mathematics", "credit": 4 },
+      { "code": "CS3351", "name": "Digital Principles & Computer Organization", "credit": 4 },
+      { "code": "AD3351", "name": "Foundations of Data Science", "credit": 3 },
+      { "code": "AD3352", "name": "Data Structures & Algorithms", "credit": 3 },
+      { "code": "CS3354", "name": "Object Oriented Programming", "credit": 3 },
+      { "code": "IT3361", "name": "Data Structures & Algorithms Lab", "credit": 2 },
+      { "code": "IT3362", "name": "Object Oriented Programming Lab", "credit": 1.5 },
+      { "code": "IT3363", "name": "Data Science Lab", "credit": 2 },
+      { "code": "GE3361", "name": "Professional Development", "credit": 1 }
+    ],
+
+    "4": [
+      { "code": "CS3452", "name": "Theory of Computation", "credit": 3 },
+      { "code": "AD3451", "name": "Machine Learning", "credit": 4 },
+      { "code": "CS3453", "name": "Database Management Systems", "credit": 3 },
+      { "code": "AD3452", "name": "Big Data Analytics", "credit": 3 },
+      { "code": "AD3453", "name": "Data Visualization", "credit": 3 },
+      { "code": "GE3451", "name": "Environmental Science", "credit": 2 },
+      { "code": "AD3461", "name": "ML Lab", "credit": 2 },
+      { "code": "CS3461", "name": "DBMS Lab", "credit": 1.5 }
+    ],
+
+    "5": [
+      { "code": "AD3551", "name": "Deep Learning", "credit": 4 },
+      { "code": "AD3552", "name": "Natural Language Processing", "credit": 4 },
+      { "code": "CS3551", "name": "Cryptography & Cyber Security", "credit": 3 },
+      { "code": "CS3552", "name": "Distributed Computing", "credit": 3 },
+      { "code": "AD3501", "name": "Professional Elective I", "credit": 3 },
+      { "code": "AD3502", "name": "Professional Elective II", "credit": 3 }
+    ],
+
+    "6": [
+      { "code": "CS3651", "name": "Object Oriented Software Engineering", "credit": 4 },
+      { "code": "CS3652", "name": "Embedded Systems & IoT", "credit": 4 },
+      { "code": "OE3601", "name": "Open Elective I", "credit": 3 },
+      { "code": "AD3601", "name": "Professional Elective III", "credit": 3 },
+      { "code": "AD3602", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "AD3603", "name": "Professional Elective V", "credit": 3 },
+      { "code": "AD3604", "name": "Professional Elective VI", "credit": 3 }
+    ],
+
+    "7": [
+      { "code": "GE3751", "name": "Human Values & Ethics", "credit": 2 },
+      { "code": "MG3751", "name": "Management Elective", "credit": 3 },
+      { "code": "OE3701", "name": "Open Elective II", "credit": 3 },
+      { "code": "OE3702", "name": "Open Elective III", "credit": 3 },
+      { "code": "OE3703", "name": "Open Elective IV", "credit": 3 },
+      { "code": "AD3701", "name": "Summer Internship", "credit": 2 }
+    ],
+
+    "8": [
+      { "code": "AD3801", "name": "Project Work / Internship", "credit": 10 }
+    ]
+  },
+  "MBA": {
+    "1": [
+      { "code": "MB3101", "name": "Foundation of Management", "credit": 3 },
+      { "code": "MB3102", "name": "Indian Economy", "credit": 3 },
+      { "code": "MB3103", "name": "Business Mathematics", "credit": 3 },
+      { "code": "MB3104", "name": "English", "credit": 3 },
+      { "code": "MB3105", "name": "Principles of Accounting", "credit": 3 },
+      { "code": "MB3106", "name": "Basic Psychology", "credit": 3 },
+      { "code": "MB3171", "name": "English Language Lab", "credit": 2 }
+    ],
+
+    "2": [
+      { "code": "MB3201", "name": "Management Accounting", "credit": 3 },
+      { "code": "MB3202", "name": "Business Organisation", "credit": 3 },
+      { "code": "MB3203", "name": "Business Statistics I", "credit": 3 },
+      { "code": "MB3204", "name": "Fundamentals of Sociology", "credit": 3 },
+      { "code": "MB3205", "name": "Business Communication", "credit": 3 },
+      { "code": "MB3206", "name": "Fundamentals of Computers", "credit": 3 },
+      { "code": "MB3271", "name": "Computer Skills Lab", "credit": 2 }
+    ],
+
+    "3": [
+      { "code": "MB3301", "name": "Managerial Economics I", "credit": 3 },
+      { "code": "MB3302", "name": "Management Information System", "credit": 3 },
+      { "code": "MB3303", "name": "Cost Accounting", "credit": 3 },
+      { "code": "MB3304", "name": "Marketing Management I", "credit": 3 },
+      { "code": "MB3305", "name": "Business Law I", "credit": 3 },
+      { "code": "MB3306", "name": "Business Statistics II", "credit": 3 },
+      { "code": "MB3371", "name": "Computer Skills II", "credit": 2 }
+    ],
+
+    "4": [
+      { "code": "MB3401", "name": "Managerial Economics II", "credit": 3 },
+      { "code": "MB3402", "name": "Data Management", "credit": 3 },
+      { "code": "MB3403", "name": "Corporate Accounting", "credit": 3 },
+      { "code": "MB3404", "name": "Quality Management", "credit": 3 },
+      { "code": "MB3405", "name": "Business Law II", "credit": 3 },
+      { "code": "MB3406", "name": "Applied Operations Research I", "credit": 3 },
+      { "code": "MB3471", "name": "Accounting Software", "credit": 2 },
+      { "code": "MB3472", "name": "Seminar I", "credit": 1 }
+    ],
+
+    "5": [
+      { "code": "MB3501", "name": "Organizational Behavior", "credit": 3 },
+      { "code": "MB3502", "name": "Applied Operations Research II", "credit": 3 },
+      { "code": "MB3503", "name": "Principles of Insurance", "credit": 3 },
+      { "code": "MB3504", "name": "Banking Theory & Practices", "credit": 3 },
+      { "code": "MB3505", "name": "Environmental Science & Engineering", "credit": 3 },
+      { "code": "MB3506", "name": "Business Policy", "credit": 3 },
+      { "code": "MB3571", "name": "Data Analysis Lab I", "credit": 2 },
+      { "code": "MB3572", "name": "Seminar II", "credit": 1 }
+    ],
+
+    "6": [
+      { "code": "MB3601", "name": "Financial Management I", "credit": 3 },
+      { "code": "MB3602", "name": "Human Resource Management", "credit": 3 },
+      { "code": "MB3603", "name": "Marketing Management II", "credit": 3 },
+      { "code": "MB3604", "name": "Operations Management I", "credit": 3 },
+      { "code": "MB3605", "name": "Information Management", "credit": 3 },
+      { "code": "MB3606", "name": "Enterprise Resource Planning", "credit": 3 },
+      { "code": "MB3671", "name": "Industrial Visit", "credit": 2 },
+      { "code": "MB3672", "name": "Seminar III", "credit": 1 }
+    ],
+
+    "7": [
+      { "code": "MB3701", "name": "Financial Management II", "credit": 3 },
+      { "code": "MB3702", "name": "Retail Marketing", "credit": 3 },
+      { "code": "MB3703", "name": "Operations Management II", "credit": 3 },
+      { "code": "MB3704", "name": "Research Methodology", "credit": 3 },
+      { "code": "MB3705", "name": "Income Tax", "credit": 3 },
+      { "code": "MB3706", "name": "Strategic Management", "credit": 3 },
+      { "code": "MB3771", "name": "Data Analysis Lab II", "credit": 2 },
+      { "code": "MB3772", "name": "Seminar IV", "credit": 1 }
+    ],
+
+    "8": [
+      { "code": "MB3801", "name": "International Business Management", "credit": 3 },
+      { "code": "MB3802", "name": "Event Management", "credit": 3 },
+      { "code": "MB3803", "name": "Entrepreneurship Development", "credit": 3 },
+      { "code": "MB3804", "name": "Business Ethics & Corporate Governance", "credit": 3 },
+      { "code": "MB3805", "name": "Business Analytics", "credit": 3 },
+      { "code": "MB3806", "name": "Creativity & Innovation", "credit": 3 },
+      { "code": "MB3871", "name": "Soft Skills Lab", "credit": 2 },
+      { "code": "MB3872", "name": "Seminar V", "credit": 1 }
+    ],
+
+    "9": [
+      { "code": "MB3901", "name": "Professional Elective I", "credit": 3 },
+      { "code": "MB3902", "name": "Professional Elective II", "credit": 3 },
+      { "code": "MB3903", "name": "Professional Elective III", "credit": 3 },
+      { "code": "MB3904", "name": "Professional Elective IV", "credit": 3 },
+      { "code": "MB3905", "name": "Professional Elective V", "credit": 3 },
+      { "code": "MB3906", "name": "Professional Elective VI", "credit": 3 },
+      { "code": "MB3971", "name": "Summer Internship", "credit": 2 },
+      { "code": "MB3972", "name": "Professional Skill Development Lab", "credit": 2 },
+      { "code": "MB3973", "name": "Seminar VI", "credit": 1 }
+    ],
+
+    "10": [
+      { "code": "MB4001", "name": "Project Work", "credit": 12 }
+    ]
+  }
+}

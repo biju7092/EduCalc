@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduCalc </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f7f9fc;
+color:#0f172a;
+}
+
+/* HEADER */
+header{
+background:white;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 1px 8px rgba(0,0,0,.06);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:700;
+font-size:18px;
+}
+
+.logo-icon{
+background:#5b5bf7;
+color:white;
+padding:7px 10px;
+border-radius:10px;
+}
+
+/* Dark mode overrides */
+body.dark{
+  background:#0b1220;
+  color:#e6eef8;
+}
+body.dark header{ background:#0f1724; box-shadow: none; }
+body.dark .home-card, body.dark .subject-box, body.dark .result, body.dark .footer{ background:#0f172a; color:#e6eef8; box-shadow: none; }
+body.dark input, body.dark select{ background:#0b1220; border:1px solid #1f2937; color:#e6eef8; }
+body.dark .main-btn{ background:linear-gradient(90deg,#111827,#374151); }
+body.dark .logo-icon{ background:#1f2937; }
+body.dark .card-icon{ background:#111827; color:#a5b4fc; }
+
+/* small transition */
+body, header, .home-card, .subject-box, input, select, .main-btn{ transition: background .2s ease, color .2s ease, border-color .2s ease; }
+
+.reset{
+border:none;
+background:#f1f5f9;
+padding:7px 14px;
+border-radius:20px;
+font-size:13px;
+cursor:pointer;
+}
+
+/* CONTAINER */
+.container{
+max-width:420px;
+margin:auto;
+padding:20px 15px 90px;
+}
+
+/* PAGE */
+.page{display:none;}
+.page.active{display:block;}
+
+/* HERO */
+.hero{
+text-align:center;
+margin:30px 0 40px;
+}
+
+.hero h1{
+font-size:30px;
+font-weight:800;
+}
+
+.hero span{color:#4f46e5;}
+
+.hero p{
+color:#64748b;
+margin-top:12px;
+line-height:1.6;
+}
+
+/* HOME CARD */
+.home-card{
+background:white;
+border-radius:20px;
+padding:22px;
+margin-bottom:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+cursor:pointer;
+}
+
+.card-icon{
+width:46px;
+height:46px;
+border-radius:12px;
+background:#eef2ff;
+color:#4f46e5;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+margin-bottom:8px;
+}
+
+/* BACK */
+.back{
+background:#eef2ff;
+border:none;
+font-size:18px;
+margin:15px 0 20px;
+padding:10px 18px;
+border-radius:12px;
+cursor:pointer;
+color:#4338ca;
+font-weight:600;
+}
+
+/* TITLE */
+.title{
+font-size:24px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.title span{color:#2563eb;}
+
+/* FORM */
+.form-group{
+margin-bottom:18px;
+}
+
+label{
+font-size:12px;
+color:#64748b;
+font-weight:600;
+}
+
+input,select{
+width:100%;
+padding:13px 14px;
+border-radius:14px;
+border:1px solid #e2e8f0;
+background:#f8fafc;
+margin-top:6px;
+font-weight:500;
+}
+
+/* SEM BOX */
+.sem-box{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.sem-btn{
+padding:10px;
+border:none;
+border-radius:12px;
+background:#f1f5f9;
+font-weight:600;
+cursor:pointer;
+}
+
+.sem-btn.active{
+background:#4f46e5;
+color:white;
+}
+
+/* SUBJECT BOX */
+.subject-box{
+background:white;
+border-radius:18px;
+padding:10px;
+margin-top:15px;
+box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+/* SUBJECT */
+.subject{
+display:grid;
+grid-template-columns:1fr 90px;
+align-items:center;
+gap:10px;
+padding:14px 10px;
+border-bottom:1px solid #f1f5f9;
+}
+
+.subject:last-child{border:none;}
+
+.subject small{
+display:block;
+margin-bottom:4px;
+color:#6366f1;
+font-weight:600;
+}
+
+.subject b{
+display:block;
+line-height:1.3;
+}
+
+.subject select{
+width:90px;
+padding:8px 10px;
+border-radius:10px;
+border:1px solid #e2e8f0;
+background:#f8fafc;
+font-weight:600;
+}
+
+/* BUTTON */
+.main-btn{
+width:100%;
+margin-top:25px;
+padding:15px;
+background:linear-gradient(90deg,#4f46e5,#2563eb);
+border:none;
+color:white;
+font-size:16px;
+border-radius:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+/* RESULT */
+.result{
+background:#eef2ff;
+padding:15px;
+border-radius:15px;
+margin-top:18px;
+font-weight:700;
+text-align:center;
+}
+
+/* FOOTER */
+.footer{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:white;
+padding:12px;
+text-align:center;
+font-size:11px;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+  <div class="logo-icon" id="logo-icon" title="Show theme toggle">📘</div>
+  <button id="theme-btn" class="reset" style="display:none; margin-left:8px;">Dark Mode</button>
+  EduCalc
+</div>
+
+<button class="reset" onclick="location.reload()">RESET</button>
+</header>
+
+<div class="container">
+
+<!-- HOME -->
+<div id="home" class="page active">
+
+<div class="hero">
+<h1>Calculate Your <span>Academic Edge.</span></h1>
+<p>Fast, precise, and stored securely.</p>
+</div>
+
+<div class="home-card" onclick="openGPA()">
+<div class="card-icon">⚡</div>
+<h3>GPA</h3>
+<p>Single semester calculator.</p>
+</div>
+
+<div class="home-card" onclick="openCGPA()">
+<div class="card-icon">📊</div>
+<h3>CGPA</h3>
+<p>Cumulative performance.</p>
+</div>
+
+</div>
+
+<!-- GPA -->
+<div id="gpa" class="page">
+
+<button class="back" onclick="goHome()">⟵ Back</button>
+
+<div class="title">GPA <span>Calculator</span></div>
+
+<!-- Register Number -->
+<div class="form-group">
+  <label>REGISTER NUMBER</label>
+  <input id="gpa-reg" oninput="checkUserExists(); loadOldGPA();">
+</div>
+
+<!-- Password (Hidden First) -->
+<div class="form-group" id="gpa-pass-box" style="display:none;">
+  <label>PASSWORD</label>
+  <input type="password"
+         id="gpa-pass"
+         placeholder="Enter / create Password"
+         oninput="checkPassword('GPA')">
+</div>
+
+<div class="form-group">
+<label>DEPARTMENT</label>
+<select id="dept-select" onchange="loadSem()">
+<option value="">Select</option>
+<option>CSE</option><option>AIML</option><option>IT</option>
+<option>ECE</option><option>EEE</option><option>MECH</option>
+<option>AGRI</option><option>BME</option><option>AD</option>
+<option>MBA</option>
+</select>
+</div>
+
+<div class="form-group" id="sem-section" style="display:none;">
+<label>SEMESTER</label>
+<div id="semBox" class="sem-box"></div>
+</div>
+
+<div id="subjects"></div>
+
+<button class="main-btn" onclick="calculateGPA()">Show Final GPA</button>
+
+<div id="gpa-result" class="result" style="display:none"></div>
+
+<button id="save-gpa-btn" class="main-btn" onclick="saveToDB('GPA')" style="display:none;" disabled>
+Save GPA
+</button>
+
+</div>
+
+<!-- CGPA -->
+<div id="cgpa" class="page">
+
+<button class="back" onclick="goHome()">⟵ Back</button>
+
+<div class="title">CGPA <span>Calculator</span></div>
+
+<div class="form-group">
+<label>REGISTER NUMBER</label>
+<input id="cgpa-reg" oninput="checkRegExists('CGPA')" placeholder="Register Number">
+</div>
+<!-- Password (Hidden First) for CGPA -->
+<div class="form-group" id="cgpa-pass-box" style="display:none;">
+  <label>PASSWORD</label>
+  <input type="password" id="cgpa-pass"
+    placeholder="Enter Password"
+    oninput="checkPassword('CGPA')">
+</div>
+<div class="form-group">
+<label>HOW MANY SEMESTERS?</label>
+<input type="number" id="sem-count" min="1" max="10" oninput="genCGPA()" value="2">
+</div>
+
+<div id="cgpaInputs"></div>
+
+<button class="main-btn" onclick="calculateCGPA()">Final Assessment</button>
+
+<div id="cgpa-result" class="result" style="display:none"></div>
+
+<button id="save-cgpa-btn" class="main-btn" onclick="saveToDB('CGPA')" style="display:none;" disabled>
+Save CGPA
+</button>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 EDUCALC • EXCELLENCE IN EDUCATION
+</div>
+
+<!-- MAIN JS -->
+<script>
+
+const gradePoints={
+"O":10,"A+":9,"A":8,"B+":7,"B":6,"C":5,"RA":0
+};
+
+let currentSem=0;
+let subjectsData={};
+
+fetch("subjects.json")
+.then(r=>r.json())
+.then(d=>subjectsData=d);
+
+function show(id){
+document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+document.getElementById(id).classList.add("active");
+}
+
+function openGPA(){show("gpa");}
+function openCGPA(){
+  show("cgpa");
+  const semCount = document.getElementById('sem-count');
+  if(semCount){
+    if(!semCount.value) semCount.value = 2; // default to 2 semesters
+    genCGPA();
+  }
+}
+function goHome(){show("home");}
+
+
+function loadSem(){
+
+let dept = document.getElementById("dept-select").value;
+let box = document.getElementById("semBox");
+let semSection = document.getElementById("sem-section");
+
+// If no department selected → hide semester
+if(!dept){
+  semSection.style.display = "none";
+  box.innerHTML = "";
+  return;
+}
+
+// Show semester when dept selected
+semSection.style.display = "block";
+
+box.innerHTML = "";
+
+let max = dept === "MBA" ? 10 : 8;
+
+for(let i=1;i<=max;i++){
+
+let b = document.createElement("button");
+b.className = "sem-btn";
+b.innerText = i;
+
+b.onclick = ()=>{
+
+document.querySelectorAll(".sem-btn")
+.forEach(x=>x.classList.remove("active"));
+
+b.classList.add("active");
+
+currentSem = i;
+loadSubjects();
+
+loadOldGPA();
+
+};
+
+box.appendChild(b);
+}
+}
+
+
+function loadSubjects(){
+
+let dept=document.getElementById("dept-select").value;
+let area=document.getElementById("subjects");
+
+area.innerHTML="";
+
+if(!subjectsData[dept] || !subjectsData[dept][currentSem]){
+area.innerHTML="<p>No subjects found.</p>";
+return;
+}
+
+let box=document.createElement("div");
+box.className="subject-box";
+
+subjectsData[dept][currentSem].forEach(s=>{
+
+let div=document.createElement("div");
+div.className="subject";
+
+div.innerHTML=`
+
+<div>
+<small>${s.code} • ${s.credit} CREDITS</small>
+<b>${s.name}</b>
+</div>
+
+<select class="grade-input" data-credit="${s.credit}">
+<option value="">-</option>
+<option>O</option>
+<option>A+</option>
+<option>A</option>
+<option>B+</option>
+<option>B</option>
+<option>C</option>
+<option>RA</option>
+</select>
+
+`;
+
+box.appendChild(div);
+
+});
+
+area.appendChild(box);
+}
+
+function calculateGPA(){
+
+let list=document.querySelectorAll(".grade-input");
+
+let total=0,credits=0;
+
+for(let s of list){
+
+if(!s.value){
+alert("Select all grades");
+return;
+}
+
+let c=Number(s.dataset.credit);
+
+total+=gradePoints[s.value]*c;
+credits+=c;
+}
+
+let gpa=(total/credits).toFixed(2);
+
+let r=document.getElementById("gpa-result");
+
+r.style.display="block";
+r.innerText="Final GPA : "+gpa;
+
+// Show save button after calculation (regardless of registration number)
+const saveBtn = document.getElementById("save-gpa-btn");
+saveBtn.style.display="block";
+saveBtn.disabled=false;
+
+window.lastGPA=gpa;
+}
+
+function genCGPA(){
+
+let n=document.getElementById("sem-count").value;
+let box=document.getElementById("cgpaInputs");
+
+box.innerHTML="";
+
+for(let i=1;i<=n;i++){
+
+box.innerHTML+=`
+<div class="form-group">
+<label>SEM ${i}</label>
+<input class="cg" type="number" step="0.01">
+</div>
+`;
+}
+}
+
+function calculateCGPA(){
+
+let list=document.querySelectorAll(".cg");
+
+let sum=0,count=0;
+
+list.forEach(i=>{
+if(i.value){
+sum+=Number(i.value);
+count++;
+}
+});
+
+if(count===0){
+alert("Enter GPA values");
+return;
+}
+
+let cgpa=(sum/count).toFixed(2);
+
+let r=document.getElementById("cgpa-result");
+
+r.style.display="block";
+r.innerText="Final CGPA : "+cgpa;
+
+// Show save button after calculation (regardless of registration number)
+const saveBtn = document.getElementById("save-cgpa-btn");
+saveBtn.style.display="block";
+saveBtn.disabled=false;
+
+window.lastCGPA=cgpa;
+}
+
+
+function checkGPAReg(){
+
+  const reg = document.getElementById("gpa-reg").value.trim();
+  const msg = document.getElementById("gpa-msg");
+
+  if(reg === ""){
+    msg.textContent = "⚠️ Enter Register Number to enable saving";
+    msg.style.color = "red";
+  } 
+  else{
+    msg.textContent = "✅ Ready to save your GPA";
+    msg.style.color = "green";
+  }
+}
+
+
+function checkCGPAReg(){
+
+  const reg = document.getElementById("cgpa-reg").value.trim();
+  const msg = document.getElementById("cgpa-msg");
+
+  if(reg === ""){
+    msg.textContent = "⚠️ Enter Register Number to enable saving";
+    msg.style.color = "red";
+  } 
+  else{
+    msg.textContent = "✅ Ready to save your CGPA";
+    msg.style.color = "green";
+  }
+}
+
+async function checkPassword(type){
+
+  let reg = type==="GPA"
+    ? document.getElementById("gpa-reg").value.trim()
+    : document.getElementById("cgpa-reg").value.trim();
+
+  let pass = type==="GPA"
+    ? document.getElementById("gpa-pass").value.trim()
+    : document.getElementById("cgpa-pass").value.trim();
+
+  let btn = type==="GPA"
+    ? document.getElementById("save-gpa-btn")
+    : document.getElementById("save-cgpa-btn");
+
+  if(!reg || !pass){
+    btn.disabled = true;
+    return;
+  }
+
+  const passRef = ref(db, `students/${reg}/password`);
+  const snap = await get(passRef);
+
+
+  // If no password yet → allow save
+  if(!snap.exists()){
+    btn.disabled = false;
+    return;
+  }
+
+  // Check password
+  if(snap.val() === pass){
+    btn.disabled = false;   // ✅ Enable
+  }
+  else{
+    btn.disabled = true;    // ❌ Disable
+  }
+}
+
+
+async function loadOldGPA(){
+
+  const reg = document.getElementById("gpa-reg").value.trim();
+  const resultBox = document.getElementById("gpa-result");
+
+  if(!reg || currentSem === 0){
+    return;
+  }
+
+  try{
+
+    const snap = await get(
+      ref(db, `students/${reg}/sem${currentSem}/gpa`)
+    );
+
+    if(snap.exists()){
+
+      const data = snap.val();
+
+      resultBox.style.display = "block";
+      resultBox.innerText =
+        "Previous GPA : " + data.result +
+        " (Saved on " + data.time + ")";
+
+    }
+    else{
+      resultBox.style.display = "none";
+    }
+
+  }
+  catch(err){
+    console.log("Load Error:", err);
+  }
+}
+
+
+</script>
+
+<style>
+/* Dark mode overrides */
+body.dark{
+  background:#0b1220;
+  color:#e6eef8;
+}
+body.dark header{ background:#0f1724; box-shadow: none; }
+body.dark .home-card, body.dark .subject-box, body.dark .result, body.dark .footer{ background:#0f172a; color:#e6eef8; box-shadow: none; }
+body.dark input, body.dark select{ background:#0b1220; border:1px solid #1f2937; color:#e6eef8; }
+body.dark .main-btn{ background:linear-gradient(90deg,#111827,#374151); }
+body.dark .logo-icon{ background:#1f2937; }
+body.dark .card-icon{ background:#111827; color:#a5b4fc; }
+
+/* small transition */
+body, header, .home-card, .subject-box, input, select, .main-btn{ transition: background .2s ease, color .2s ease, border-color .2s ease; }
+</style>
+
+<!-- FIREBASE -->
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyCrf8NSLIh8sBjFRFTb2FDj-sNdIhz8HTw",
+authDomain: "cgpa-calculator-70a53.firebaseapp.com",
+databaseURL: "https://cgpa-calculator-70a53-default-rtdb.firebaseio.com",
+projectId: "cgpa-calculator-70a53",
+storageBucket: "cgpa-calculator-70a53.appspot.com",
+messagingSenderId: "828389538021",
+appId: "1:828389538021:web:de34658336a42967e1bc0c"
+};
+
+const app = initializeApp(firebaseConfig);
+window.db = getDatabase(app);
+window.ref = ref;
+window.get = get;
+window.set = set;
+
+
+window.checkUserExists = async function(){
+
+  const reg = document.getElementById("gpa-reg").value.trim();
+  const passBox = document.getElementById("gpa-pass-box");
+  const passInput = document.getElementById("gpa-pass");
+
+  // If empty → hide password
+  if(!reg){
+    passBox.style.display = "none";
+    passInput.value = "";
+    return;
+  }
+
+  try{
+
+    const snap = await get(
+      ref(db, "students/" + reg + "/password")
+    );
+
+    // If password exists → old user
+    if(snap.exists()){
+      passBox.style.display = "block";
+    }
+    // New user
+    else{
+      passBox.style.display = "none";
+      passInput.value = "";
+    }
+
+  }
+  catch(err){
+    console.log("Firebase Error:", err);
+  }
+};
+
+// Check CGPA register existence and toggle password box (mirrors GPA behavior)
+window.checkRegExists = async function(type){
+
+  // currently only used for CGPA
+  if(type !== 'CGPA') return;
+
+  const reg = document.getElementById("cgpa-reg").value.trim();
+  const passBox = document.getElementById("cgpa-pass-box");
+  const passInput = document.getElementById("cgpa-pass");
+
+  // If empty → hide password
+  if(!reg){
+    passBox.style.display = "none";
+    passInput.value = "";
+    return;
+  }
+
+  try{
+    const snap = await get(
+      ref(db, "students/" + reg + "/password")
+    );
+
+    // If password exists → show password input for existing user
+    if(snap.exists()){
+      passBox.style.display = "block";
+    }
+    // New user → hide (will prompt on save)
+    else{
+      passBox.style.display = "none";
+      passInput.value = "";
+    }
+
+  }
+  catch(err){
+    console.log("Firebase Error:", err);
+  }
+};
+
+
+window.saveToDB = async function(type){
+
+  const reg = document.getElementById("gpa-reg").value.trim();
+  const passBox = document.getElementById("gpa-pass-box");
+  const passInput = document.getElementById("gpa-pass");
+
+  if(!reg){
+    alert("Enter Register Number");
+    return;
+  }
+
+  // Check password in DB
+  const snap = await get(
+    ref(db, "students/" + reg + "/password")
+  );
+
+  /* ================= OLD USER ================= */
+
+  if(snap.exists()){
+
+    passBox.style.display = "block";
+
+    const savedPass = snap.val();
+    const enteredPass = passInput.value.trim();
+
+    if(!enteredPass){
+      alert("Enter Password");
+      return;
+    }
+
+    if(savedPass !== enteredPass){
+      alert("Wrong Password ❌");
+      return;
+    }
+  }
+  else{
+    const newPass = prompt("Create a password to secure your result:");
+
+    if(!newPass){
+      alert("Password required!");
+      return;
+    }
+
+    await set(ref(db, "students/" + reg + "/password"), newPass);
+  }
+
+  // Get GPA / CGPA
+  let value = type==="GPA" ? window.lastGPA : window.lastCGPA;
+
+  if(!value){
+    alert("Calculate First");
+    return;
+  }
+
+  let path = "";
+
+  if(type==="GPA"){
+    if(currentSem===0){
+      alert("Select Semester");
+      return;
+    }
+
+    path = `students/${reg}/sem${currentSem}/gpa`;
+  }
+  else{
+    path = `students/${reg}/final/cgpa`;
+  }
+
+  await set(ref(db, path),{
+    result:value,
+    time:new Date().toLocaleString()
+  });
+
+  alert(type+" Saved Successfully ✅");
+};
+
+
+</script>
+
+<script>
+// Theme toggle: reveal button when logo clicked, persist choice
+(function(){
+  const logo = document.getElementById('logo-icon');
+  const themeBtn = document.getElementById('theme-btn');
+  if(!logo || !themeBtn) return;
+
+  // Initialize from localStorage
+  const saved = localStorage.getItem('theme');
+  if(saved === 'dark'){
+    document.body.classList.add('dark');
+    themeBtn.textContent = 'Light Mode';
+  } else {
+    themeBtn.textContent = 'Dark Mode';
+  }
+
+  // Show/hide the theme button when logo is clicked and toggle theme immediately
+  logo.addEventListener('click', ()=>{
+    // reveal/hide the button
+    themeBtn.style.display = themeBtn.style.display === 'none' ? 'inline-block' : 'none';
+    // also toggle theme immediately
+    const isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  });
+
+  // Toggle theme on button click
+  themeBtn.addEventListener('click', ()=>{
+    const isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  });
+})();
+</script>
+
+</body>
+</html>
+
+<script>
+// Theme: reveal button when logo clicked, toggle and persist
+(function(){
+  const logo = document.getElementById('logo-icon');
+  const themeBtn = document.getElementById('theme-btn');
+  if(!logo || !themeBtn) return;
+
+  const saved = localStorage.getItem('theme');
+  if(saved === 'dark'){
+    document.body.classList.add('dark');
+    themeBtn.textContent = 'Light Mode';
+  } else {
+    themeBtn.textContent = 'Dark Mode';
+  }
+
+  logo.addEventListener('click', ()=>{
+    themeBtn.style.display = themeBtn.style.display === 'none' ? 'inline-block' : 'none';
+  });
+
+  themeBtn.addEventListener('click', ()=>{
+    const isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  });
+})();
+</script>
