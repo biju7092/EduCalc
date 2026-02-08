@@ -319,7 +319,7 @@ color:#94a3b8;
 
 <!-- Register Number -->
 <div class="form-group">
-  <label>REGISTER NUMBER</label>
+  <label>REGISTER NUMBER (Optional)</label>
   <input id="gpa-reg" oninput="checkUserExists(); loadOldGPA();">
 </div>
 
@@ -368,7 +368,7 @@ Save GPA
 <div class="title">CGPA <span>Calculator</span></div>
 
 <div class="form-group">
-<label>REGISTER NUMBER</label>
+<label>REGISTER NUMBER (Optional)</label>
 <input id="cgpa-reg" oninput="checkRegExists('CGPA')" placeholder="Register Number">
 </div>
 <!-- Password (Hidden First) for CGPA -->
@@ -974,4 +974,5 @@ window.saveToDB = async function(type){
     themeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
   });
 })();
+
 </script>
