@@ -8,7 +8,7 @@ import { getFirestore } from "firebase/firestore";
 ============================== */
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
   authDomain: "cgpa-calculator-dbs.firebaseapp.com",
   projectId: "cgpa-calculator-dbs",
   storageBucket: "cgpa-calculator-dbs.appspot.com",

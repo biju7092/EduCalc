@@ -69,7 +69,7 @@ const GPACalculator: React.FC<GPACalculatorProps> = ({ user, setUser }) => {
   }, [loadedSubjects, grades]);
 
   useEffect(() => {
-    fetch('/subjects.json')
+    fetch(`${import.meta.env.BASE_URL}subjects.json`)
       .then(res => res.json())
       .then(data => setDepartments(data.departments || []))
       .catch(() => setFetchError('Failed to load curriculum data.'));

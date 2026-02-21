@@ -20,7 +20,7 @@ const Login = ({ setUser }: { setUser: (user: UserRecord) => void }) => {
   });
 
   useEffect(() => {
-  fetch('/subjects.json')
+  fetch(`${import.meta.env.BASE_URL}subjects.json`)
     .then(res => res.json())
     .then(data =>
       setDepartments(
